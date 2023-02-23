@@ -1,3 +1,7 @@
+//Joel Paul Fernandez
+//PROG72365 - Assignment 1 - Winter 2023
+//Date : 22/02/2023
+
 #include <stdio.h>
 #include "queue.h"
 
