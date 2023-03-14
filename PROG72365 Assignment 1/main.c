@@ -25,6 +25,8 @@ int main(int argc, char* argv[])
 
 
     }
+
+/*
     while (!queue_is_empty(&queue)) {
         user_t user = queue_dequeue(&queue);
         printf("Username: %s, Level: %d, Faction: ", user.username, user.level);
@@ -40,6 +42,15 @@ int main(int argc, char* argv[])
             break;
         }
     }
+*/
+// Traverse the queue
+    printf("Traversing the queue:\n");
+    traverse(queue.head);
+
+    // Traverse the queue in reverse
+    printf("\nTraversing the queue in reverse:\n");
+    traverseR(queue.head);
+
 
     return 0;
 }

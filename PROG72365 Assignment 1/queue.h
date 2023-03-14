@@ -17,3 +17,4 @@ void queue_init(queue_t* queue);
 int queue_is_empty(queue_t* queue);
 void queue_enqueue(queue_t* queue, user_t user);
 user_t queue_dequeue(queue_t* queue);
+int enqueue_random_users(queue_t* queue, int num_users);

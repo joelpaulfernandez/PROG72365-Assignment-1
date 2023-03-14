@@ -67,3 +67,45 @@ int enqueue_random_users(queue_t* queue, int num_users) {
     }
     return 0;
 }
+
+
+void traverse(queue_node_t* node) {
+    if (node == NULL) {
+        return;
+    }
+    user_t user = node->user;
+    printf("Username: %s, Level: %d, Faction: ", user.username, user.level);
+    switch (user.faction) {
+    case RED:
+        printf("Red\n");
+        break;
+    case BLUE:
+        printf("Blue\n");
+        break;
+    case GREEN:
+        printf("Green\n");
+        break;
+    }
+    traverse(node->next);
+}
+
+void traverseR(queue_node_t* node) {
+    if (node == NULL) {
+        return;
+    }
+    traverseR(node->next);
+    user_t user = node->user;
+    printf("Username: %s, Level: %d, Faction: ", user.username, user.level);
+    switch (user.faction) {
+    case RED:
+        printf("Red\n");
+        break;
+    case BLUE:
+        printf("Blue\n");
+        break;
+    case GREEN:
+        printf("Green\n");
+        break;
+    }
+}
+
