@@ -31,7 +31,7 @@ void queue_enqueue(queue_t* queue, user_t user) {
     }
     queue->tail = new_node;
 }
-
+/*
 user_t queue_dequeue(queue_t* queue) {
     if (queue_is_empty(queue)) {
         // error: cannot dequeue from empty queue
@@ -46,7 +46,7 @@ user_t queue_dequeue(queue_t* queue) {
     }
     return user;
 }
-
+*/
 int enqueue_random_users(queue_t* queue, int num_users) {
     srand(time(NULL)); // initialize random seed
     for (int i = 0; i < num_users; i++) {
